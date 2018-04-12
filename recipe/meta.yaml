@@ -1,6 +1,6 @@
 {% set name = "filebutler" %}
-{% set version = "0.16.0" %}
-{% set sha256 = "b46025131de5073b23097b9cb050b696cea152bade624a8e3c93e2e73169e764" %}
+{% set version = "0.16.2" %}
+{% set sha256 = "1d987c959cfeefff6690b361373b2e008ca07066e2083e3fd059ed9b05f07ec2" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   skip: True  # [win]
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - filebutler = filebutler.__main__:main
@@ -32,7 +32,7 @@ requirements:
     - python
     - future
     - pytz
-    - setuptools_scm
+    - setuptools
     - tzlocal
 
 test:
