@@ -1,6 +1,6 @@
 {% set name = "filebutler" %}
-{% set version = "0.16.2" %}
-{% set sha256 = "1d987c959cfeefff6690b361373b2e008ca07066e2083e3fd059ed9b05f07ec2" %}
+{% set version = "0.17.0" %}
+{% set sha256 = "29bac9a89107177d61c687b2e393b8aae4d8e380392acf1fabfd91fd1096d3dc" %}
 
 package:
   name: {{ name|lower }}
