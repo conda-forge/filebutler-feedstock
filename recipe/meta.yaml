@@ -1,6 +1,6 @@
 {% set name = "filebutler" %}
-{% set version = "0.22.0" %}
-{% set sha256 = "252ea7a82d077fb64ec2dfa40530b1ad2b81bc97986fe8ba7d4fd24e62b3fb99" %}
+{% set version = "0.23.0" %}
+{% set sha256 = "c01c84f6412402fa9bd79dadfdc0863f980686238bc61387c03e202a4385a9b1" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   skip: True  # [py2k or win]
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - filebutler = filebutler.__main__:main
