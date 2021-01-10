@@ -19,7 +19,7 @@ build:
     - filebutler = filebutler.__main__:main
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     - setuptools_scm
